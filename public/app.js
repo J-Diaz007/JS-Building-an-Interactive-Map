@@ -28,7 +28,7 @@ marker.addTo(myMap).bindPopup('<p1><b>The Hoxton, Paris</b></p1>').openPopup()
 
 
 // Draw the 2nd arrondissement
-var polygon = L.polygon([                                          
+let polygon = L.polygon([                                          
     [48.863368120198004, 2.3509079846928516],
     [48.86933262048345, 2.3542531602919805],
     [48.87199261164275, 2.3400569901592183],
@@ -52,3 +52,5 @@ const stations = L.layerGroup([rS, sSD, sentier, bourse, qS, gB]).addTo(myMap)
 
 
 // Create red pin marker
+const rS = L.marker([48.866200610611926, 2.352236247419453],{icon: redPin}).bindPopup('RÃ©aumur-SÃ©bastopol')
+
